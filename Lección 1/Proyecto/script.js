@@ -1,0 +1,4 @@
+/*
+    TIPOS DE DATOS DE JAVASCRIPT
+*/
+
