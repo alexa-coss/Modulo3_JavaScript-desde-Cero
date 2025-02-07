@@ -4,7 +4,7 @@
 */
 
 
-let nota = 92; //Valores a probar: -5, 0, 18, 70, 75, 100, 106
+let nota = 92; // Valores a probar: -5, 0, 18, 70, 75, 100, 106
 console.log(nota);
 
 
