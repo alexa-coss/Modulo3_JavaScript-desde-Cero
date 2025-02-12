@@ -11,23 +11,24 @@
     • Modifica el ciclo para que imprima solo los números pares.
 */
 
-    // Imprimir del número 10 al 1.
-let contador = 10;
 
-while(contador > 0){
-    console.log(contador);
-    contador --;
+    // Imprimir del número 10 al 1.
+let contadorInv = 10;
+
+while(contadorInv > 0){
+    console.log(contadorInv);
+    contadorInv --;
 }
 
 
     // Imprimir número pares del número 10 al 1.
-contador = 10;
+contadorInv = 10;
 
-while(contador > 0){
-    if(contador % 2 == 0){
-        console.log(contador);
+while(contadorInv > 0){
+    if(contadorInv % 2 == 0){
+        console.log(contadorInv);
     }
-    contador --;
+    contadorInv --;
 }
 
 
@@ -39,6 +40,7 @@ while(contador > 0){
     • Suma de Pares: Modifica el ciclo para que solo sume los números pares del 1 al 20 y muestre el resultado.
 
 */
+
 
     // Imprimir del número 10 al 1.
 for(let i = 10; i>0; i--){
@@ -74,6 +76,7 @@ console.log(suma); // 30
     console.log(colores); // Muestra el array modificado
 */
 
+
     // 1. Crear Array "colores".
 let colores = ['rojo', 'verde', 'azul', 'amarillo'];
 console.log(colores); // ['rojo', 'verde', 'azul', 'amarillo']
@@ -82,13 +85,13 @@ console.log(colores); // ['rojo', 'verde', 'azul', 'amarillo']
 console.log(colores[1]); // verde
 
     // 3. Modificar el Tercer Color.
-colores[2] = 'negro'; // ['rojo', 'verde', 'negro', 'amarillo']
+colores[2] = 'negro';
+console.log(colores); // ['rojo', 'verde', 'negro', 'amarillo']
 
     // 4. Añadir un Nuevo Color.
 colores.push('violeta');
 console.log(colores); // ['rojo', 'verde', 'negro', 'amarillo', 'violeta']
 
-
     // 5. Eliminar el Primer Color.
-console.log(colores);
+colores.shift(colores);
 console.log(colores); // ['verde', 'negro', 'amarillo', 'violeta']
