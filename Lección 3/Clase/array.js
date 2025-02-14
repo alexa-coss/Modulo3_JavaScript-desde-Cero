@@ -6,7 +6,7 @@ let frutas = ["Uva", "Manzana", "Pera", "Mango", "Fresa", "Aguacate"]
 console.log("Lista de frutas: ", frutas);
 
 
-// Ejemplo 2: crear un arreglo simple
+// Ejemplo 2: acceder a elementos de un arreglo
 console.log("Primera fruta: ", frutas[0]);
 console.log("Segunda fruta: ", frutas[1]);
 console.log("--------------------------------------");
