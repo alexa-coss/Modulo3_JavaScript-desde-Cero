@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lecturas lección 6</title>
+</head>
+<body>
+    <h1>Intro a DOM en JavaScript</h1>
+    
+
+    <h2>Cambiar contenido con JavaScript</h2>
+
+
+    <h3>Ejercicio 1: Cambiar el contenido de una página con un botón</h3>
+
+    <h4 id="titulo">¡Bienvenido a mi página prueba!</h4>
+    <p id="parrafo">Este es el contenido inicial.</p>
+    <button id="cambiarContenido">Cambiar contenido</button>
+
+    <script>
+        // Seleccionar elementos por id → getElementById() 
+        let titulo = document.getElementById('titulo')
+        let parrafo = document.getElementById('parrafo')
+        let botonA = document.getElementById('cambiarContenido')
+
+        // Agregar evento al botón para cambiar de contenido al hacer clic. → addEventListener
+        botonA.addEventListener('click', function() {
+        titulo.innerHTML = '¡Contenido actualizado!'; // → innerHTML
+        parrafo.innerHTML = 'Este es el contenido actualizado.'; // → innerHTML
+        });
+
+    </script>
+
+
+    <h3>Ejercicio 2: Mostrar u ocultar un contenido</h3>
+
+    <button id="mostrarOcultar">Mostrar contenido</button>
+    <div id="contenido" style="display: none;">
+        <p>Este es un texto oculto inicialmente.</p>
+    </div>
+    
+
+    <script>
+        // Seleccionar elementos por id → getElementById() 
+        let botonO = document.getElementById('mostrarOcultar')
+        let contenido = document.getElementById('contenido')
+
+        // Agregar evento al botón para cambiar de contenido al hacer clic. → addEventListener
+        botonO.addEventListener('click', function() {
+        if (contenido.style.display === 'none') { // Si es none, el texto esta oculto.
+            contenido.style.display = 'block';  // Muestra el contenido → style.display
+            botonO.textContent = 'Ocultar contenido'; // Cambia el contenido → textContent
+        } else {
+            contenido.style.display = 'none';  // Oculta el contenido → style.display
+            botonO.textContent = 'Mostrar contenido'; // Cambia el contenido → textContent
+        }
+        });
+    </script>
+</body>
+</html>
