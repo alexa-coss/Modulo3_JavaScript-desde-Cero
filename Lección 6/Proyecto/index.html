@@ -7,49 +7,49 @@
     <title>Práctica 6</title>
 </head>
 <body>
-    <h1>Práctica 5. Intro a DOM en JavaScript</h1>
-    <script src="script.js"></script>
+    <header>
+        <h1>Práctica 6. Intro a DOM en JavaScript</h1>
+    </header>
 
     <h2>Problema: Caja de Comentarios (Simple Comment Box).</h2>
+
+    <p>En esta página puedes redactar un comentario y enviarlo. Posteriormente se mostrará más abajo.</p>
+
+    <main>
+        <!-- Formulario de comentarios -->
+        <section aria-labelledby="formulario-comentarios"> <!-- Dar un poco más de contexto, sobre todo a personas con baja visión que usan ayudas. -->
+            <h3 id="Formulario-comentarios">Formulario de comentarios</h3>
+            <form id="comentario-form">
+                <label for="comentario">Agregar comentario:</label>
+                <input type="text" id="comentario" required>
     
+                <button type="submit">Agregar comentario</button>
+            </form>
+        </section>
+    
+        <!-- Lista de comentarios -->
+        <section aria-labelledby="lista-titulo">
+            <h3 id="lista-titulo">Lista de comentarios agregados</h3>
+            <ul id="lista-comentarios"></ul>
+        </section>
+    </main>
 
-    <h3>Valor actual</h3>
-    <p>Creación del objeto "libro" a partir de una clase.</p>
-    <figure>
-        <img src="https://i.postimg.cc/TwJ5yQy2/Crear-objeto-a-partir-de-la-clase.jpg" alt="Crear libro">
-        <figcaption>Crear ficha y estado del libro Harry Potter I.</figcaption>
-    </figure>
-
-    <p>Agregar capítulo.</p>
-    <figure>
-        <img src="https://i.postimg.cc/GhFD6L3T/Agregar-cap-tulo.jpg" alt="Agregar capítulos">
-        <figcaption>Agregar cuatro capítulos.</figcaption>
-    </figure>
-
-    <p>Eliminar capítulo.</p>
-    <figure>
-        <img src="https://i.postimg.cc/hGj7JVLV/Eliminar-cap-tulo.jpg" alt="Eliminar capítulo">
-        <figcaption>Eliminar capítulo erróneo.</figcaption>
-    </figure>
-
+    <footer>
+        <p>&copy; 2025 Gestión de comentarios</p>
+    </footer>
 
     <h3>Pruebas</h3>
-    <p>Creación del objeto "libro" a partir de una clase.</p>
+    <p>Agregar comentarios con ayuda del formulario.</p>
     <figure>
-        <img src="https://i.postimg.cc/wj9NpC3f/Crear-objeto-a-partir-de-la-clase-Prueba.jpg" alt="Crear libro">
-        <figcaption>Crear ficha y estado del libro Harry Potter I.</figcaption>
+        <img src="https://i.postimg.cc/W4DS06tN/Comentarios.jpg" alt="Agregar comentarios">
+        <figcaption>Agregar comentarios.</figcaption>
     </figure>
 
-    <p>Agregar capítulo.</p>
     <figure>
-        <img src="https://i.postimg.cc/sD9HjRfb/Agregar-cap-tulo-Prueba.jpg" alt="Agregar capítulos">
-        <figcaption>Agregar cuatro capítulos.</figcaption>
+        <img src="https://i.postimg.cc/wBS22ysh/Comentario-eliminado.jpg" alt="Eliminar comentario">
+        <figcaption>Eliminar un comentarios.</figcaption>
     </figure>
 
-    <p>Eliminar capítulo.</p>
-    <figure>
-        <img src="https://i.postimg.cc/zGpgXxgJ/Eliminar-cap-tulo-Prueba.jpg" alt="Eliminar capítulos">
-        <figcaption>Eliminar un capítulo que no esta y el prólogo.</figcaption>
-    </figure>
+    <script src="script.js"></script>
 </body>
 </html>
