@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Redressed&family=Varela+Round&display=swap");
+
+/* Definición de variables de colores para mejor mantenimiento */
+:root {
+    --background-color: lightblue;
+    --primary-color: #2c4661;
+    --button-color: #16a085;
+    --hoover-color: #2f7e75;
+    --highlight-color: #e74c3c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body{
+    font-family: 'Playwrite GB S', sans-serif;
+    margin: 30px 40px 30px 40px; /* Arriba - Derecha - Abajo - Izquierda */
+    background-color: var(--background-color);
+}
+
+header {
+    text-align: center;
+/* Si el tamaño dela fuente no está explícitamente establecida,
+toma por defectoel tamaño de 16px, es decir 1rem = 16px */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50vw;
+}
+
+main {
+    max-width: 40rem;
+    margin: 2rem auto;
+}
+
+footer{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+form {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin: 0.5rem 0 1.5rem;
+}
+
+label, input, select {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.75rem;
+}
+
+button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    width: 40%;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto; /* Lo centra horizontalmente */
+}
+
+button:hover {
+    background-color: var(--hoover-color)
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    width: 18rem;
+    text-align: center;
+}
+
+img {
+    border: 0.1rem solid black;
+    margin-top: 0.5rem;
+    margin-bottom: -0.5rem;
+}

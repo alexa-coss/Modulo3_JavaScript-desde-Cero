@@ -4,6 +4,7 @@
 
 
 /*
+  Lectura: Acceso y modificación de Contenido del DOM
   📌 Ejercicio 1:
     Acceso y modificación de Contenido del DOM
     
@@ -28,8 +29,10 @@
 
 
 /*
+  Lectura: Acceder a clases CSS
   📌 Ejercicio 2:
     Mostrar u ocultar un contenido
     
     Objetivo:
 */
+
