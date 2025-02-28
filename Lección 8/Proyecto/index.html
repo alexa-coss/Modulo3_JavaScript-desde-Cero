@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Práctica 8</title>
+</head>
+<body>
+    <header>
+        <h1>Práctica 8. Proyecto Final (dom)</h1>
+    </header>
+
+    <h2>Seguimiento de Libros</h2>
+
+    <p>En esta página se pueden agregar y eliminar las fichas técnicas de libros que tenemos, los  datos generales son:</p>
+    <ul>
+        <li>Título del libro.</li>
+        <li>Autor que lo escribió.</li>
+        <li>Año de publicación.</li>
+        <li>Si esta <span class="disponible">disponible</span>, <span class="prestado">prestado</span> o <span class="noExistencia">no hay en existencia</span>.</li>
+    </ul>
+
+    <main>
+        <!-- Formulario de libros -->
+        <section aria-labelledby="formulario-libros"> <!-- Dar un poco más de contexto, sobre todo a personas con baja visión que usan ayudas. -->
+            <h2 id="Formulario-libros">Formulario de productos</h2>
+            <form id="libro-form">
+                <label for="titulo">Título del libro:</label>
+                <input type="text" id="titulo" placeholder="Título" required>
+    
+                <label for="autor">Autor que lo escribió:</label>
+                <input type="text" id="autor" placeholder="Autor" required>
+
+                <label for="anio">Año de publicación:</label>
+                <input type="text" id="anio" placeholder="Año" required>
+    
+                <label for="estado">Estado:</label>
+                <select id="estado" required>
+                    <option value="" disabled selected>Estado</option>
+                    <option value="Disponible">Disponible</option>
+                    <option value="Prestado">Prestado</option>
+                    <option value="No hay en existencia">No hay en existencia</option>
+                </select>
+    
+                <button type="submit">Agregar libro</button>
+            </form>
+        </section>
+    
+        <!-- Lista de libros -->
+        <section aria-labelledby="libros">
+            <h2 id="Lista-titulo">Lista de libros</h2>
+            <ul id="lista-libros"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lista de libros</p>
+    </footer>
+
+    <h3>Pruebas</h3>
+    <p>Se hace una prueba añadiendo cuatro libros, el primero con información incompleta, por lo que se borrará.</p>
+    <figure>
+        <img src="https://i.postimg.cc/c4mZCFpq/Eliminar.jpg" alt="Libros con error">
+        <figcaption>Inicio de la lista con el primer libro erroneo.</figcaption>
+    </figure>
+
+    <figure>
+        <img src=https://i.postimg.cc/RV94vkbQ/Lista.jpg" alt="Libros correctos">
+        <figcaption>Lista completa con los libros correctos.</figcaption>
+    </figure>
+
+    <script src="script.js"></script>
+</body>
+</html>
