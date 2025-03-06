@@ -3,10 +3,11 @@
 /* Definición de variables de colores para mejor mantenimiento */
 :root {
     --background-color: lightblue;
+    --background-colorForm: #2c4661;
     --primary-color: #2c4661;
-    --button-color: #16a085;
-    --hoover-color: #2f7e75;
-    --highlight-color: #e74c3c;
+    --secondary-color: #98FF98;
+    --buttonCopy-color: #E6E6FA;
+    --hooverCopy-color: #8A66A1;
 }
 
 *{
@@ -44,7 +45,8 @@ footer{
 }
 
 form {
-    background: white;
+    background-color: var(--background-colorForm);
+    color: var(--buttonCopy-color);
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
@@ -57,12 +59,34 @@ label, input, select {
     margin-bottom: 0.75rem;
 }
 
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+    width: 1rem;
+    height: 1rem;
+    accent-color: var(--secondary-color);
+}
+
 button {
-    background-color: var(--button-color);
-    color: white;
+    background-color: var(--secondary-color);
+    color: black;
     border: none;
     padding: 0.75rem;
-    width: 40%;
     border-radius: 0.5rem;
     cursor: pointer;
     font-size: 1rem;
@@ -70,8 +94,29 @@ button {
     margin: 0 auto; /* Lo centra horizontalmente */
 }
 
-button:hover {
-    background-color: var(--hoover-color)
+#generate {
+    width: 30%;
+    border: 0.1rem solid var(--button-color);
+}
+
+#copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--buttonCopy-color);
+    border: 0.1rem solid var(--buttonCopy-color);
+}
+
+#generate:hover {
+    background-color: var(--background-colorForm);
+    color: var(--secondary-color);
+    border: 0.1rem solid var(--secondary-color);
+}
+
+#copy:hover {
+    background-color: var(--hooverCopy-color);
 }
 
 ul {
@@ -89,8 +134,95 @@ li {
     text-align: center;
 }
 
+#length-value {
+    color: #98FF98;
+}
+
 img {
     border: 0.1rem solid black;
     margin-top: 0.5rem;
     margin-bottom: -0.5rem;
+}
+
+figcaption {
+    font-size: 1rem; /* Tamaño de letra */
+    color: var(--hooverCopy-color);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+h4 {
+    color: var(--primary-color);
+}
+
+/* Barra deslizable (input[type="range"]) */
+input[type="range"] {
+    -webkit-appearance: none; /* Quitar estilo predeterminado en WebKit (Chrome, Safari) */
+    appearance: none; /* Quitar estilo predeterminado */
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, var(--secondary-color) 0%, var(--secondary-color) 0%, var(--buttonCopy-color) 0%, var(--buttonCopy-color) 100%); /* Fondo con gradiente */
+    border-radius: 5px;
+    outline: none; /* Quitar contorno */
+}
+
+/* Barra deslizable - color conforme se desliza */
+input[type="range"]:focus {
+    background: linear-gradient(to right, var(--secondary-color) 0%, var(--secondary-color) 0%, black 0%, black 100%); /* Mantiene el cambio de color al estar enfocado */
+}
+
+/* Barra deslizable - control de la bolita */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Quitar estilo predeterminado */
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondary-color); /* Pulgar de color --secondary-color */
+    border-radius: 50%; /* Círculo */
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px; /* En Firefox */
+    height: 20px; /* En Firefox */
+    background-color: var(--secondary-color); /* Pulgar de color --secondary-color */
+    border-radius: 50%; /* Círculo */
+    cursor: pointer;
+}
+
+/* Actualización dinámica del color de la barra conforme el pulgar se mueve */
+input[type="range"]:active {
+    background: linear-gradient(to right, var(--secondary-color) 0%, var(--secondary-color) 0%, black 0%, var(--secondary-color) 100%);
+}
+
+/* Checkbox (input[type="checkbox"]) */
+input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--background-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 0.25rem;
+    appearance: none; /* Quitar estilo predeterminado */
+    cursor: pointer;
+}
+
+/* Estado de checked del checkbox */
+input[type="checkbox"]:checked {
+    background-color: var(--secondary-color); /* Fondo cuando está marcado */
+    border-color: var(--secondary-color);
+}
+
+/* Estado del checkbox al pasar el cursor */
+input[type="checkbox"]:hover {
+    background-color: var(--secondary-color); /* Fondo al pasar el cursor */
+    border-color: var(--secondary-color);
+}
+
+#strength {
+    color: var(--secondary-color);
+}
+
+#password{
+    background-color: var(--buttonCopy-color);
+    color: black;
 }
