@@ -10,6 +10,7 @@ En esté repositorio se encuentra todo lo realizado durante el módulo tres, se 
 
 Con git y GitHub se lleva un mejor control de los avances que se tienen en los ducmentos HTML, CSS Y JS.
 
+
 ## Objetivo
 Crear un repositorio que contenga todo lo visto en el módulo correspondiente.
 
@@ -76,13 +77,6 @@ Problema: Seguimiento de Libros.
 He corregido o agregado pequeños detalles a lo largo del módulo.
 
 Algunos temas se me hicieron más complejos y, conforme avanzaba el curso, las prácticas fueron un buen reto, sobre todo el Generador de Contraseñas que, a pesar de no quedar exactamente como yo quería, considero que se ve bastante bien y funciona de manera correcta.
-
-
-En algunas partes, donde pensé que sería más rápido, me he detenido en cosas que no salen como deberían, en otras he estado mucho tiempo tratando de resolver un problema.
-
-Traté de realizar las copias lo más parecido posible a las originales, solo algunos pequeños detalles no los realicé, ya que tienen que ver con JavaScript. He corregido o agregado pequeños detalles a lo largo de todo el proyecto.
-
-Considero que he practicado y puesto todos mis conocimientos en este proyecto, finalizando con una copia semejante y satisfactoria. 
 
 
 # Sobre mí
